@@ -27,7 +27,7 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 	•	Configure JavaFX libraries in your IDE (e.g., IntelliJ IDEA, Eclipse).
 	•	Set VM options to include JavaFX:
 
---module-path <path-to-javafx-sdk>/lib --add-modules javafx.controls,javafx.fxml,javafx.media
+        --module-path <path-to-javafx-sdk>/lib --add-modules javafx.controls,javafx.fxml,javafx.media
 
 
 	4.	Run the game:
@@ -45,8 +45,8 @@ How to Play
 	•	Maze Game: Navigate through a maze to reach the end point.
 	•	Button Puzzle: Solve the puzzle by activating all buttons.
 	•	Wire Puzzle: Solve the wiring challenge to power up the generator.
-        • FindDifferentNumberGame: Find the hiding number between all the numbers.
-        • MemoryGame: Match between pairs of killers images.
+        •       FindDifferentNumberGame: Find the hiding number between all the numbers.
+        •       MemoryGame: Match between pairs of killers images.
 	4.	Win Conditions:
 	•	Complete all mini-games to escape!
 
