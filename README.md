@@ -45,8 +45,8 @@ How to Play
     	•	Maze Game: Navigate through a maze to reach the end point.
     	•	Button Puzzle: Solve the puzzle by activating all buttons.
     	•	Wire Puzzle: Solve the wiring challenge to power up the generator.
-        •       FindDifferentNumberGame: Find the hiding number between all the numbers.
-        •       MemoryGame: Match between pairs of killers images.
+            •       FindDifferentNumberGame: Find the hiding number between all the numbers.
+            •       MemoryGame: Match between pairs of killers images.
     	4.	Win Conditions:
       	•	Complete all mini-games to escape!
 
