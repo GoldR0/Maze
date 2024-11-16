@@ -36,19 +36,19 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 
 How to Play
 
-	1.	Startup:
-	•	The game starts with a splash screen featuring multiple clicks to transition.
-	2.	Main Menu:
-	•	Choose from the available mini-games or start a new game.
-	3.	Mini-Games:
-	•	Typing Challenge: Type sentences correctly before time runs out.
-	•	Maze Game: Navigate through a maze to reach the end point.
-	•	Button Puzzle: Solve the puzzle by activating all buttons.
-	•	Wire Puzzle: Solve the wiring challenge to power up the generator.
+    	1.	Startup:
+    	•	The game starts with a splash screen featuring multiple clicks to transition.
+    	2.	Main Menu:
+    	•	Choose from the available mini-games or start a new game.
+    	3.	Mini-Games:
+    	•	Typing Challenge: Type sentences correctly before time runs out.
+    	•	Maze Game: Navigate through a maze to reach the end point.
+    	•	Button Puzzle: Solve the puzzle by activating all buttons.
+    	•	Wire Puzzle: Solve the wiring challenge to power up the generator.
         •       FindDifferentNumberGame: Find the hiding number between all the numbers.
         •       MemoryGame: Match between pairs of killers images.
-	4.	Win Conditions:
-	•	Complete all mini-games to escape!
+    	4.	Win Conditions:
+      	•	Complete all mini-games to escape!
 
 
 
