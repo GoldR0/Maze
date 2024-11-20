@@ -41,8 +41,9 @@ For Python:
 	3.Place the model folder inside the /speech directory in your project.
 	Ensure the following structure is in place:
  
-	/speech
-	├── main.py
+	
+	├── speech 
+ 		├─main.py
 	├── vosk-model-small-en-us-0.15/
 
  	4.Run the script to confirm that it works:
