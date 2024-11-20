@@ -14,6 +14,7 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 - *Custom Design*: Unique graphics and sound resources for an engaging experience.
 
 ## Installation
+For javaFX:
 
 1. *Clone the repository*:
    ```bash
@@ -23,18 +24,34 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 	2.	Set up your environment:
 	•	Install Java 21+ (OpenJDK recommended).
 	•	Install JavaFX SDK.
+		(the sdk is in the file)
 	3.	Add JavaFX to your IDE:
-	•	Configure JavaFX libraries in your IDE (e.g., IntelliJ IDEA, Eclipse).
+	•	Configure JavaFX libraries in your IDE (e.g., IntelliJ IDEA, Eclipse),add the external jars from the sdk(javafx-sdk-23.0.1--->lib--->mark all the files),
+		and the json-20240303.jar file .
 	•	Set VM options to include JavaFX:
 
         --module-path <path-to-javafx-sdk>/lib --add-modules javafx.controls,javafx.fxml,javafx.media
 
+For Python:
 
-	4.	Run the game:
-	•	Execute the Main class from your IDE.
+  	1. Install **Python** 3.9.13 or later.
+	Use pip to install the necessary dependencies:
+		pip install sounddevice vosk
+	2.Download the vosk-model-small-en-us-0.15
+	3.Place the model folder inside the /speech directory in your project.
+	Ensure the following structure is in place:
+ 
+	/speech
+	├── main.py
+	├── vosk-model-small-en-us-0.15/
 
+ 	4.Run the script to confirm that it works:
+		python speech/main.py
+	5.Speak into your microphone, and ensure the text is transcribed correctly.
 
-How to Play
+Start the game from the Main.java
+
+	How to Play
 
     	1.	Startup:
     	•	The game starts with a splash screen featuring multiple clicks to transition.
