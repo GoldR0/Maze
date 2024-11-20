@@ -77,7 +77,7 @@ Start the game from the Main.java
     	•	Wire Puzzle: Solve the wiring challenge to power up the generator.
             •       FindDifferentNumberGame: Find the hiding number between all the numbers.
             •       MemoryGame: Match between pairs of killers images.
-	   	 •	    SpeechToTextGame: Use your voice to complete the answers
+        •	    SpeechToTextGame: Use your voice to complete the answers
     	4.	Win Conditions:
       	•	Complete all mini-games to escape!
 
