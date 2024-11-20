@@ -16,10 +16,10 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 ## Installation
 For javaFX:
 
-1. *Clone the repository*:
-   ```bash
-   git clone https://github.com/<your-username>/escape-room-game.git
-   cd escape-room-game
+	1. *Clone the repository*:
+   	```bash
+  	 git clone https://github.com/<your-username>/escape-room-game.git
+  	 cd escape-room-game
 
 	2.	Set up your environment:
 	•	Install Java 21+ (OpenJDK recommended).
