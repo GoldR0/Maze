@@ -8,10 +8,12 @@ A JavaFX-based interactive escape room game with multiple mini-games, immersive 
 
 - *Dynamic Gameplay*: Multiple mini-games including Typing Challenge, Maze Game, Button Puzzle, and Wire Puzzle.
 - *Immersive Experience*:
-  - Fullscreen visuals with high-quality background images.
+  - Fullscreen visuals with scary background images.
   - Scary jumpscares with accompanying sound effects.
 - *Progression System*: Players progress through levels with seamless transitions.
 - *Custom Design*: Unique graphics and sound resources for an engaging experience.
+-*Speech Interaction*: A unique mini-game that uses microphone input to recognize players' speech and provide real-time responses.
+  - Engage with the game through voice commands and solve puzzles using your spoken answers.
 
 ## Installation
 For javaFX:
@@ -26,6 +28,9 @@ For javaFX:
 	•	Set VM options to include JavaFX:
 
         --module-path <path-to-javafx-sdk>/lib --add-modules javafx.controls,javafx.fxml,javafx.media
+
+ 	for example of VM :
+		--module-path "C:\Users\Yourname\Desktop\javafx-sdk-22.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.media
 
 For Python:
 
@@ -54,8 +59,8 @@ paths:
 	in the java code:
 		in SpeechToTextGame.java class:
 		change the paths for the python file and main.py to your paths (the first is for the pyhton app to show,second for the main.py python code):
- 	line 90: "C:\\Users\\Roy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",       
-	line 91: "C:\\Users\\Roy\\Desktop\\eSpeak\\speech\\main.py"
+ 	line 90: "C:\\Users\\Yourname\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",       
+	line 91: "C:\\Users\\Yourname\\Desktop\\eSpeak\\speech\\main.py"
 
 Start the game from the Main.java
 
