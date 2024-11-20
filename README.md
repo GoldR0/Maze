@@ -1,4 +1,4 @@
-להלן קובץ README.md עבור הפרויקט שלך, שניתן להעלות ל-GitHub:
+
 
 # Escape Room Game
 
