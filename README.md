@@ -45,6 +45,18 @@ For Python:
 		python speech/main.py
 	5.Speak into your microphone, and ensure the text is transcribed correctly.
 
+paths:
+
+  	in the python code:
+   		change to your path for the vosk:
+	line11: model = vosk.Model(r"C:\Users\Yourname\Desktop\eSpeak\vosk-model-small-en-us-0.15")
+
+	in the java code:
+		in SpeechToTextGame.java class:
+		change the paths for the python file and main.py to your paths (the first is for the pyhton app to show,second for the main.py python code):
+ 	line 90: "C:\\Users\\Roy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",       
+	line 91: "C:\\Users\\Roy\\Desktop\\eSpeak\\speech\\main.py"
+
 Start the game from the Main.java
 
 	How to Play
