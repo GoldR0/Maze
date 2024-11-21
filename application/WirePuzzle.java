@@ -1,6 +1,7 @@
 package application;
 
-import javafx.scene.control.Button;
+
+
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -49,7 +50,7 @@ public class WirePuzzle {
         root.setCenter(canvas);
 
         // Set background image for the puzzle
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/wirepicture.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/acavish.png"));
         BackgroundImage background = new BackgroundImage(
             backgroundImage, 
             BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, 
@@ -184,28 +185,28 @@ public class WirePuzzle {
         }
     }
 
-    // Show the next level after all wires are connected
     private void showNextLevel() {
         BorderPane nextLevelPane = new BorderPane();
-        VBox vbox = new VBox(20);
-        vbox.setAlignment(javafx.geometry.Pos.CENTER);
 
-        // Set background image
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/maavarkillers.png"));
+        // הגדרת תמונת הרקע
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/killersfront.png"));
         BackgroundImage background = new BackgroundImage(
-            backgroundImage, 
-            BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, 
-            BackgroundPosition.CENTER, 
-            new BackgroundSize(1400, 1000, false, false, false, false) // התאמת גודל התמונה
+            backgroundImage,
+            BackgroundRepeat.NO_REPEAT,
+            BackgroundRepeat.NO_REPEAT,
+            BackgroundPosition.CENTER,
+            new BackgroundSize(1400, 1000, false, false, false, false)
         );
         nextLevelPane.setBackground(new Background(background));
 
-        // Set click event on the background to move to the next room
-        nextLevelPane.setOnMouseClicked(e -> {
-            FindDifferentNumberGame nextRoom = new FindDifferentNumberGame();
-            nextRoom.start(window); // העברה לחדר הבא של FindDifferentNumberGame
+        // הוספת אירוע לחיצה על הרקע כדי להתחיל את משחק ה-SpeechToTextGame
+        nextLevelPane.setOnMouseClicked(event -> {
+            SpeechToTextGame speechGame = new SpeechToTextGame(window);
+            speechGame.startSpeechToTextGame(); // הפעלת המשחק SpeechToTextGame
         });
+
         Scene nextLevelScene = new Scene(nextLevelPane, 1400, 1000);
         window.setScene(nextLevelScene);
     }
+
 }

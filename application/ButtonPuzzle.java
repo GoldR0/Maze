@@ -1,8 +1,9 @@
 package application;
 import javafx.scene.layout.GridPane;
+
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
@@ -98,7 +99,7 @@ public class ButtonPuzzle {
         layout.setStyle("-fx-alignment: center;");
 
         // הגדרת תמונת רקע שתתאים לכל גודל חלון
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/maavarb.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/gener.png"));
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,

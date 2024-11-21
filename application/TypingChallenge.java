@@ -1,6 +1,7 @@
 package application;
 
 import javafx.scene.image.Image;
+
 import javafx.scene.image.ImageView;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -18,7 +19,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.util.Random;
-import javafx.scene.image.ImageView;
+
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -117,10 +118,10 @@ public class TypingChallenge {
 
         if (success) {
             // הוספת התמונה maavarmaze.png לאחר ניצחון
-            Image winImage = new Image(getClass().getResourceAsStream("/resources/maavarmaze.png"));
+            Image winImage = new Image(getClass().getResourceAsStream("/resources/beforemaze.png"));
             ImageView winImageView = new ImageView(winImage);
             winImageView.setFitWidth(1200); // התאמת גודל התמונה
-            winImageView.setFitHeight(800);
+            winImageView.setFitHeight(1400);
             
             // כאשר לוחצים על התמונה, מעבר למשחק MazeGame
             winImageView.setOnMouseClicked(e -> {

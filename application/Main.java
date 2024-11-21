@@ -34,7 +34,7 @@ public class Main extends Application {
         
         
         // מסך פתיחה עם תמונת logo.png
-        Image logoImage = new Image(getClass().getResourceAsStream("/resources/logo.png"));
+        Image logoImage = new Image(getClass().getResourceAsStream("/resources/startlogo.png"));
         ImageView logoImageView = new ImageView(logoImage);
         logoImageView.setFitWidth(1400);
         logoImageView.setFitHeight(1000);
@@ -125,6 +125,20 @@ public class Main extends Application {
         creditsButton.setPrefWidth(300);
         creditsButton.setPrefHeight(50);
 
+        
+        Button speechToTextGameButton = new Button("Speech To Text Game");
+        speechToTextGameButton.setStyle("-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 18px;");
+        speechToTextGameButton.setPrefWidth(300);
+        speechToTextGameButton.setPrefHeight(50);
+        speechToTextGameButton.setOnAction(e -> {
+            SpeechToTextGame speechGame = new SpeechToTextGame(window);
+            speechGame.startSpeechToTextGame();
+        });
+        
+
+        
+ 
+        
         Button exitButton = new Button("Exit");
         exitButton.setStyle(
             "-fx-background-image: url('/resources/buttons.png');" +
@@ -148,7 +162,6 @@ public class Main extends Application {
         window.setScene(menuScene);
     }
 
-    // פונקציה לתצוגת תפריט ה-Levels
     private void showLevelsMenu() {
         VBox levelsLayout = new VBox(20);
         levelsLayout.setAlignment(Pos.CENTER);
@@ -211,17 +224,38 @@ public class Main extends Application {
             memoryGame.start(new Stage());
         });
 
+        // הוספת כפתור Speech to Text
+        Button speechToTextGameButton = new Button("Speech To Text Game");
+        speechToTextGameButton.setStyle("-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 18px;");
+        speechToTextGameButton.setPrefWidth(300);
+        speechToTextGameButton.setPrefHeight(50);
+        speechToTextGameButton.setOnAction(e -> {
+            SpeechToTextGame speechGame = new SpeechToTextGame(window);
+            speechGame.startSpeechToTextGame();
+        });
+
         Button backButton = new Button("Back to Menu");
         backButton.setStyle("-fx-background-color: black; -fx-text-fill: white; -fx-font-size: 18px;");
         backButton.setPrefWidth(300);
         backButton.setPrefHeight(50);
         backButton.setOnAction(e -> window.setScene(menuScene));
 
-        levelsLayout.getChildren().addAll(startButton, mazeButton, puzzleButton, wirePuzzleButton, findNumberGameButton, memoryGameButton, backButton);
+        // הוספת כל הכפתורים
+        levelsLayout.getChildren().addAll(
+            startButton,
+            mazeButton,
+            puzzleButton,
+            wirePuzzleButton,
+            speechToTextGameButton, // הוספת כפתור Speech to Text
+            findNumberGameButton,
+            memoryGameButton,
+            backButton
+        );
 
         Scene levelsScene = new Scene(levelsLayout, 1200, 800);
         window.setScene(levelsScene);
     }
+
 
     // Function to show credits
     private void showCredits() {

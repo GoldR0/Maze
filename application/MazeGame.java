@@ -1,6 +1,7 @@
 package application;
 
 import javafx.animation.KeyFrame;
+
 import javafx.animation.Timeline;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
-import application.ButtonPuzzle;
+
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -100,7 +101,7 @@ public class MazeGame {
     }
 
     private void goToNextGame() {
-        Image nextImage = new Image(getClass().getResourceAsStream("/resources/maavardark1.png"));
+        Image nextImage = new Image(getClass().getResourceAsStream("/resources/darkroom.png"));
         ImageView nextImageView = new ImageView(nextImage);
         nextImageView.setPreserveRatio(false);
         nextImageView.fitWidthProperty().bind(window.widthProperty());

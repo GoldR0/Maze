@@ -207,7 +207,7 @@ public class MemoryGame extends Application {
         Stage newStage = new Stage();
         newStage.setTitle("New Window");
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/backwind.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/resources/credits.png"));
         BackgroundImage background = new BackgroundImage(
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,
